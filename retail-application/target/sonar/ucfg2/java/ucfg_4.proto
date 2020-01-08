@@ -1,0 +1,102 @@
+
+0com.roudy.good.Good#toString()Ljava/lang/String;X
+N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/Good.java ("1*◊
+1X
+N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/Good.java (ì
+ê
+X
+N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/Good.java (
+%0java.lang.String"__concat*	
+Good{*
+ID=ö
+ó
+X
+N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/Good.java (
+%1java.lang.Long"__id**
+com.roudy.good.Good"
+ID±
+Æ
+X
+N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/Good.java (
+%2java.lang.String"__concat*
+
+%0java.lang.String*
+
+%1java.lang.Longß
+§
+X
+N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/Good.java (
+%3java.lang.String"__concat*
+
+%2java.lang.String*
+
+, name='û
+õ
+X
+N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/Good.java (!
+%4java.lang.String"__id*!*
+com.roudy.good.Good"
+name≥
+∞
+X
+N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/Good.java (!
+%5java.lang.String"__concat*
+
+%3java.lang.String*
+
+%4java.lang.String°
+û
+X
+N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/Good.java ((
+%6java.lang.String"__concat*
+
+%5java.lang.String*
+""¶
+£
+X
+N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/Good.java (
+%7java.lang.String"__concat*
+
+%6java.lang.String*	
+, type=û
+õ
+X
+N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/Good.java ( 
+%8java.lang.String"__id*!*
+com.roudy.good.Good"
+type≥
+∞
+X
+N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/Good.java ( 
+%9java.lang.String"__concat*
+
+%7java.lang.String*
+
+%8java.lang.String®
+•
+X
+N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/Good.java  (
+%10java.lang.String"__concat*
+
+%9java.lang.String*
+
+, price=£
+†
+X
+N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/Good.java  ("
+%11java.lang.String"__concat*
+
+%10java.lang.String*
+""£
+†
+X
+N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/Good.java !(
+%12java.lang.String"__concat*
+
+%11java.lang.String*
+"""u
+X
+N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/Good.java !(
+
+%12java.lang.StringB
+com.roudy.good.Good

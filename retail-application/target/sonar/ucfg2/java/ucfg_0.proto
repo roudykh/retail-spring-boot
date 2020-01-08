@@ -1,0 +1,102 @@
+
+Ocom.roudy.good.GoodRowMapper#mapRow(Ljava/sql/ResultSet;I)Lcom/roudy/good/Good;a
+W/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/GoodRowMapper.java ("paramAnnotations*Ä
+paramAnnotationsa
+W/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/GoodRowMapper.java (0­
+ª
+a
+W/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/GoodRowMapper.java (
+%10"
+__annotate*
+java.lang.Override*
+
+rsjava.sql.ResultSet—
+”
+a
+W/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/GoodRowMapper.java! (#
+rsjava.sql.ResultSet"__annotation*
+
+%10*
+1*ù
+1a
+W/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/GoodRowMapper.java (–“
+a
+W/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/GoodRowMapper.java (
+%0com.roudy.good.Good"com.roudy.good.Good¨
+¥
+a
+W/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/GoodRowMapper.java (
+%1"com.roudy.good.Good#<init>()V*
+
+%0com.roudy.good.Good¦
+£
+a
+W/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/GoodRowMapper.java (
+goodcom.roudy.good.Good"__id*
+
+%0com.roudy.good.Goodäá
+a
+W/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/GoodRowMapper.java (#
+
+%2long"/java.sql.ResultSet#getLong(Ljava/lang/String;)J*
+
+rsjava.sql.ResultSet*
+ID2getLong(Ljava/lang/String;)æã
+a
+W/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/GoodRowMapper.java ($
+
+%3void",com.roudy.good.Good#setID(Ljava/lang/Long;)V*
+
+goodcom.roudy.good.Good*
+
+
+%2long2setID(Ljava/lang/Long;)‡„
+a
+W/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/GoodRowMapper.java ()
+%4java.lang.String"Bjava.sql.ResultSet#getString(Ljava/lang/String;)Ljava/lang/String;*
+
+rsjava.sql.ResultSet*
+NAME2getString(Ljava/lang/String;)ú÷
+a
+W/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/GoodRowMapper.java (*
+
+%5void"0com.roudy.good.Good#setName(Ljava/lang/String;)V*
+
+goodcom.roudy.good.Good*
+
+%4java.lang.String2setName(Ljava/lang/String;)‡„
+a
+W/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/GoodRowMapper.java ()
+%6java.lang.String"Bjava.sql.ResultSet#getString(Ljava/lang/String;)Ljava/lang/String;*
+
+rsjava.sql.ResultSet*
+TYPE2getString(Ljava/lang/String;)ú÷
+a
+W/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/GoodRowMapper.java (*
+
+%7void"0com.roudy.good.Good#setType(Ljava/lang/String;)V*
+
+goodcom.roudy.good.Good*
+
+%6java.lang.String2setType(Ljava/lang/String;)íê
+a
+W/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/GoodRowMapper.java (+
+%8double"1java.sql.ResultSet#getDouble(Ljava/lang/String;)D*
+
+rsjava.sql.ResultSet*	
+PRICE2getDouble(Ljava/lang/String;)ÐÍ
+a
+W/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/GoodRowMapper.java (,
+
+%9void" com.roudy.good.Good#setPrice(D)V*
+
+goodcom.roudy.good.Good*
+
+%8double2setPrice(D)"‚
+a
+W/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/good/GoodRowMapper.java (
+
+goodcom.roudy.good.Good:
+rsjava.sql.ResultSet:
+""B 
+com.roudy.good.GoodRowMapper
