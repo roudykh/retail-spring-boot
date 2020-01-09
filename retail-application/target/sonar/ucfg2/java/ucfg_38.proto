@@ -1,35 +1,0 @@
-
-8com.roudy.user.UserRepository#findAll3()Ljava/util/List;b
-X/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/UserRepository.java` `("1*›	
-1b
-X/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/UserRepository.javab b()ž
-›
-b
-X/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/UserRepository.javab b(*
-sqljava.lang.String"__id*
-SELECT * FROM USERÔ
-Ñ
-b
-X/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/UserRepository.javad d('0
-%0*org.springframework.jdbc.core.JdbcTemplate"__id*3*1
-com.roudy.user.UserRepository"
-jdbcTemplate—”
-b
-X/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/UserRepository.javad f(6
-%1java.util.List"}org.springframework.jdbc.core.JdbcTemplate#query(Ljava/lang/String;Lorg/springframework/jdbc/core/RowMapper;)Ljava/util/List;*2
-0
-%0*org.springframework.jdbc.core.JdbcTemplate*
-
-sqljava.lang.String*
-""2Bquery(Ljava/lang/String;Lorg/springframework/jdbc/core/RowMapper;)ž
-›
-b
-X/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/UserRepository.javad f(7
-usersjava.util.List"__id*
-
-%1java.util.List"
-b
-X/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/UserRepository.javah h(
-
-usersjava.util.ListB!
-com.roudy.user.UserRepository

@@ -1,108 +1,0 @@
-
-0com.roudy.user.User#toString()Ljava/lang/String;X
-N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/User.java ("1*ô
-1X
-N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/User.java (ì
-ê
-X
-N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/User.java (
-%0java.lang.String"__concat*	
-User{*
-ID=ö
-ó
-X
-N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/User.java (
-%1java.lang.Long"__id**
-com.roudy.user.User"
-ID±
-Æ
-X
-N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/User.java (
-%2java.lang.String"__concat*
-
-%0java.lang.String*
-
-%1java.lang.Longß
-§
-X
-N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/User.java  (
-%3java.lang.String"__concat*
-
-%2java.lang.String*
-
-, name='û
-õ
-X
-N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/User.java   (!
-%4java.lang.String"__id*!*
-com.roudy.user.User"
-name≥
-∞
-X
-N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/User.java  (!
-%5java.lang.String"__concat*
-
-%3java.lang.String*
-
-%4java.lang.String°
-û
-X
-N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/User.java  ((
-%6java.lang.String"__concat*
-
-%5java.lang.String*
-""¶
-£
-X
-N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/User.java !(
-%7java.lang.String"__concat*
-
-%6java.lang.String*	
-, type=û
-õ
-X
-N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/User.java! !( 
-%8java.lang.String"__id*!*
-com.roudy.user.User"
-type≥
-∞
-X
-N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/User.java !( 
-%9java.lang.String"__concat*
-
-%7java.lang.String*
-
-%8java.lang.StringÆ
-´
-X
-N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/User.java "( 
-%10java.lang.String"__concat*
-
-%9java.lang.String*
-, createdDate=¶
-£
-X
-N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/User.java"# "(.
-%11java.lang.String"__id*(*&
-com.roudy.user.User"
-createdDate∂
-≥
-X
-N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/User.java "(.
-%12java.lang.String"__concat*
-
-%10java.lang.String*
-
-%11java.lang.String£
-†
-X
-N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/User.java #(
-%13java.lang.String"__concat*
-
-%12java.lang.String*
-"""u
-X
-N/Users/roudy/Desktop/retail-application/src/main/java/com/roudy/user/User.java #(
-
-%13java.lang.StringB
-com.roudy.user.User
