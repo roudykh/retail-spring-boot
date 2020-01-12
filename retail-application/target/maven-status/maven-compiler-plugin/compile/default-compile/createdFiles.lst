@@ -1,0 +1,8 @@
+com/roudy/good/GoodRepository.class
+com/roudy/purchase/Purchase.class
+com/roudy/StartApplication.class
+com/roudy/user/UserRepository.class
+com/roudy/user/User.class
+com/roudy/good/Good.class
+com/roudy/user/UserRowMapper.class
+com/roudy/good/GoodRowMapper.class

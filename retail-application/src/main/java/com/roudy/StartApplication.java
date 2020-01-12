@@ -4,6 +4,7 @@ import com.roudy.user.User;
 import com.roudy.user.UserRepository;
 import com.roudy.good.Good;
 import com.roudy.good.GoodRepository;
+import com.roudy.purchase.Purchase;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -62,12 +63,12 @@ public class StartApplication implements CommandLineRunner {
     public void run(String... args) throws Exception{
 
         log.info("Starting Application...");
-        startApp();
+        startTestCases();
         
     }
 
-    // Tested with H2 database
-    void startApp() throws Exception{
+    // Using H2 database
+    void startTestCases() throws Exception{
 
         jdbcTemplate.execute("DROP TABLE user IF EXISTS");
         jdbcTemplate.execute("CREATE TABLE user(" +
@@ -104,69 +105,17 @@ public class StartApplication implements CommandLineRunner {
             basket.put(u, 1);
         });
         
-        checkout(basket, userRepository.findByUserId(1L));
-        checkout(basket, userRepository.findByUserId(2L));
-        checkout(basket, userRepository.findByUserId(3L));
-        checkout(basket, userRepository.findByUserId(4L));
+        Purchase case1 = new Purchase(basket, userRepository.findByUserId(1L));
+        Purchase case2 = new Purchase(basket, userRepository.findByUserId(2L));
+        Purchase case3 = new Purchase(basket, userRepository.findByUserId(3L));
+        Purchase case4 = new Purchase(basket, userRepository.findByUserId(4L));
+        
+        case1.checkout();
+        case2.checkout();
+        case3.checkout();
+        case4.checkout();
 
     }
-    
-    void checkout(HashMap<Good, Integer> basket, User user) throws Exception {
-        Date cutoffDate = java.sql.Date.valueOf(LocalDate.now().minusDays(730));
-        double sum = 0;
-        
-        switch(user.getType()) {
-            case "Employee":
-                log.info("Employee");
-                
-                for (HashMap.Entry<Good, Integer> entry : basket.entrySet()) {
-                    Good good = entry.getKey();
-                    Integer quantity = entry.getValue();
-                    sum += good.getPrice()*quantity;
-                }
-                sum *= 0.7;
-                break;
-            case "Affliate":
-                log.info("Affliate");
-                for (HashMap.Entry<Good, Integer> entry : basket.entrySet()) {
-                    Good good = entry.getKey();
-                    Integer quantity = entry.getValue();
-                    sum += good.getPrice()*quantity;
-                }
-                sum *= 0.9;
-                break;
-            case "Customer":
-                if(string2date(user.getCreatedDate()).after(cutoffDate)) {
-                    log.info("New Customer");
-                    for (HashMap.Entry<Good, Integer> entry : basket.entrySet()) {
-                            Good good = entry.getKey();
-                            Integer quantity = entry.getValue();
-                            sum += good.getPrice()*quantity;
-                    }
-                    if(sum >= 100)
-                        sum *= 0.95;
-                } else {
-                    log.info("Old Customer");
-                    for (HashMap.Entry<Good, Integer> entry : basket.entrySet()) {
-                        Good good = entry.getKey();
-                        Integer quantity = entry.getValue();
-                        sum += good.getPrice()*quantity;
-                    }
-                    sum *= 0.95;
-                }
-                break;
-            default:
-                log.info("Error default");
-        }
-        
-        log.info("Bill: " + sum);
-         
-     }
-    
-    Date string2date(String str) throws Exception {
-        DateFormat format = new SimpleDateFormat("ddMMyyyy");
-        Date date = format.parse(str);
-        return date;
-    }
+
 
 }
