@@ -1,35 +1,35 @@
-package com.roudy.good;
+package com.roudy.retail.model;
 
-public class Good {
+public class User {
 
     private Long ID;
     private String name;
     private String type;
-    private double price;
+    private String createdDate;
 
-    public Good() {
+    public User() {
     }
 
-    public Good(String name, String type, double price) {
+    public User(String name, String type, String createdDate) {
         this.name = name;
         this.type = type;
-        this.price = price;
+        this.createdDate = createdDate;
     }
 
-    public Good(Long ID, String name, String type, double price) {
+    public User(Long ID, String name, String type, String createdDate) {
         this.ID = ID;
         this.name = name;
         this.type = type;
-        this.price = price;
+        this.createdDate = createdDate;
     }
 
     @Override
     public String toString() {
-        return "Good{" +
+        return "User{" +
                 "ID=" + ID +
                 ", name='" + name + '\'' +
                 ", type=" + type +
-                ", price=" + price +
+                ", createdDate=" + createdDate +
                 '}';
     }
 
@@ -56,12 +56,12 @@ public class Good {
     public void setType(String type) {
         this.type = type;
     }
-    
-    public double getPrice() {
-        return price;
+
+    public String getCreatedDate() {
+        return createdDate;
     }
-    
-    public void setPrice(double price) {
-        this.price = price;
+
+    public void setCreatedDate(String createdDate) {
+        this.createdDate = createdDate;
     }
 }

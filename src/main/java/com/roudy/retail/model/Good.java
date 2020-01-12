@@ -1,37 +1,35 @@
-package com.roudy.user;
+package com.roudy.retail.model;
 
-import java.time.LocalDateTime;
-
-public class User {
+public class Good {
 
     private Long ID;
     private String name;
     private String type;
-    private String createdDate;
+    private double price;
 
-    public User() {
+    public Good() {
     }
 
-    public User(String name, String type, String createdDate) {
+    public Good(String name, String type, double price) {
         this.name = name;
         this.type = type;
-        this.createdDate = createdDate;
+        this.price = price;
     }
 
-    public User(Long ID, String name, String type, String createdDate) {
+    public Good(Long ID, String name, String type, double price) {
         this.ID = ID;
         this.name = name;
         this.type = type;
-        this.createdDate = createdDate;
+        this.price = price;
     }
 
     @Override
     public String toString() {
-        return "User{" +
+        return "Good{" +
                 "ID=" + ID +
                 ", name='" + name + '\'' +
                 ", type=" + type +
-                ", createdDate=" + createdDate +
+                ", price=" + price +
                 '}';
     }
 
@@ -58,12 +56,12 @@ public class User {
     public void setType(String type) {
         this.type = type;
     }
-
-    public String getCreatedDate() {
-        return createdDate;
+    
+    public double getPrice() {
+        return price;
     }
-
-    public void setCreatedDate(String createdDate) {
-        this.createdDate = createdDate;
+    
+    public void setPrice(double price) {
+        this.price = price;
     }
 }

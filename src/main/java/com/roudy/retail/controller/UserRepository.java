@@ -1,9 +1,11 @@
-package com.roudy.user;
+package com.roudy.retail.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+
+import com.roudy.retail.model.User;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -43,7 +45,7 @@ public class UserRepository {
 
         String sql = "SELECT * FROM USER WHERE ID = ?";
 
-        return (User) jdbcTemplate.queryForObject(sql, new Object[]{id}, new BeanPropertyRowMapper(User.class));
+        return (User) jdbcTemplate.queryForObject(sql, new Object[]{id}, new BeanPropertyRowMapper<User>(User.class));
 
     }
 
@@ -69,7 +71,7 @@ public class UserRepository {
 
         List<Map<String, Object>> rows = jdbcTemplate.queryForList(sql);
 
-        for (Map row : rows) {
+        for (Map<?, ?> row : rows) {
             User obj = new User();
 
             obj.setID(((Integer) row.get("ID")).longValue());
@@ -99,7 +101,7 @@ public class UserRepository {
 
         List<User> users = jdbcTemplate.query(
                 sql,
-                new BeanPropertyRowMapper(User.class));
+                new BeanPropertyRowMapper<User>(User.class));
 
         return users;
     }

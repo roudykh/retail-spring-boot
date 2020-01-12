@@ -1,9 +1,11 @@
-package com.roudy.good;
+package com.roudy.retail.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+
+import com.roudy.retail.model.Good;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +35,7 @@ public class GoodRepository {
 
         String sql = "SELECT * FROM GOOD WHERE ID = ?";
 
-        return (Good) jdbcTemplate.queryForObject(sql, new Object[]{id}, new BeanPropertyRowMapper(Good.class));
+        return (Good) jdbcTemplate.queryForObject(sql, new Object[]{id}, new BeanPropertyRowMapper<Good>(Good.class));
 
     }
 
@@ -59,7 +61,7 @@ public class GoodRepository {
 
         List<Map<String, Object>> rows = jdbcTemplate.queryForList(sql);
 
-        for (Map row : rows) {
+        for (Map<?, ?> row : rows) {
             Good obj = new Good();
 
             obj.setID(((Integer) row.get("ID")).longValue());
@@ -89,7 +91,7 @@ public class GoodRepository {
 
         List<Good> goods = jdbcTemplate.query(
                 sql,
-                new BeanPropertyRowMapper(Good.class));
+                new BeanPropertyRowMapper<Good>(Good.class));
 
         return goods;
     }

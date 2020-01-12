@@ -1,12 +1,11 @@
-package com.roudy.good;
-
-import org.springframework.jdbc.core.RowMapper;
+package com.roudy.retail.controller;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.sql.Date;
+
+import org.springframework.jdbc.core.RowMapper;
+
+import com.roudy.retail.model.Good;
 
 public class GoodRowMapper implements RowMapper<Good> {
 

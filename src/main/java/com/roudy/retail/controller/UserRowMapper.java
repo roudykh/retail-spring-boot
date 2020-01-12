@@ -1,6 +1,8 @@
-package com.roudy.user;
+package com.roudy.retail.controller;
 
 import org.springframework.jdbc.core.RowMapper;
+
+import com.roudy.retail.model.User;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
